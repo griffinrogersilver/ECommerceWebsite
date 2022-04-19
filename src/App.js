@@ -1,5 +1,5 @@
 
-import './categories.styles.scss'
+import CategoryDirectory  from './components/category-directory/ category-directory';
 const App =() =>{
 
   const categories = [
@@ -32,51 +32,40 @@ const App =() =>{
   
 
   return (
-    <div className = "categories-container">
-      {categories.map(({title, id})=>(
-<div className={title} key={id}>
-    {/* IMG */}
-       <div className="category-body-container">
-         <div className='background-image'/>
-         <h2>Hats</h2>
-         <p>Shop Now</p>
-       </div>
-      </div>
-
-
-      ))}
-      
-      <div className="category-container">
-    {/* IMG */}
-       <div className="category-body-container">
-         <h2>Jackets</h2>
-         <p>Shop Now</p>
-       </div>
-      </div>
-      <div className="category-container">
-    {/* IMG */}
-       <div className="category-body-container">
-         <h2>Sneakers</h2>
-         <p>Shop Now</p>
-       </div>
-      </div>
-      <div className="category-container">
-    {/* IMG */}
-       <div className="category-body-container">
-         <h2>Womens</h2>
-         <p>Shop Now</p>
-       </div>
-      </div>
-      <div className="category-container">
-    {/* IMG */}
-       <div className="category-body-container">
-         <h2>Mens</h2>
-         <p>Shop Now</p>
-       </div>
-      </div>
-    </div>
+    <CategoryDirectory categories= {categories}/>
+   
+  )
+//       <div className="category-container">
+//     {/* IMG */}
+//        <div className="category-body-container">
+//          <h2>Jackets</h2>
+//          <p>Shop Now</p>
+//        </div>
+//       </div>
+//       <div className="category-container">
+//     {/* IMG */}
+//        <div className="category-body-container">
+//          <h2>Sneakers</h2>
+//          <p>Shop Now</p>
+//        </div>
+//       </div>
+//       <div className="category-container">
+//     {/* IMG */}
+//        <div className="category-body-container">
+//          <h2>Womens</h2>
+//          <p>Shop Now</p>
+//        </div>
+//       </div>
+//       <div className="category-container">
+//     {/* IMG */}
+//        <div className="category-body-container">
+//          <h2>Mens</h2>
+//          <p>Shop Now</p>
+//        </div>
+//       </div>
+//     </div>
     
-  );
+//   );
 }
 
 export default App;
